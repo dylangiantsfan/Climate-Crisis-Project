@@ -1,0 +1,259 @@
+/* Global Styles */
+@import url("https://fonts.googleapis.com/css2?family=Barriecito&family=Boldonse&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "Onest", sans-serif;
+  scroll-behavior: smooth;
+  justify-content: center;
+}
+.container{
+  background-image: url('https://media.embassylandscape.com/gallery/2022/02/4_pikist1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-color: #e0f7e9;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+::selection {
+  background: #cfe8c9;
+  color: #2e2e2e;
+}
+/* Style the navbar */
+#navbar {
+  display: flex;
+  justify-content: center; /* Centers items horizontally */
+  align-items: center; /* Centers items vertically */
+  position: sticky;
+  top: 0;
+  /*overflow: hidden;*/
+  background-color: #4a5d23;
+  z-index: 1000;
+}
+
+a:hover {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(129, 73, 73)
+
+}
+
+/* Navbar links */
+#navbar a {
+  font-family: "Poppins", sans-serif;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 25px;
+  text-decoration: none;
+}
+#navbar img {
+  height: 100px; /* Adjust size as needed */
+  width: auto;
+  margin-right: 15px; /* Space between the image and links */
+}
+
+/* Page content */
+.page-content {
+  padding: 16px;
+}
+
+/* Wrapper for Hero Section */
+.wrapper {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://inaturalist-open-data.s3.amazonaws.com/photos/178045618/large.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Hero Section */
+
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.summary {
+   padding: 20px 100px;
+  border-radius: 10px;
+}
+
+
+/* Main Content Area */
+.content {
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 20px 30px;
+  border-radius: 10px;
+}
+
+
+/* Title and Subtitle */
+.title {
+  font-size: 5rem;
+  margin-bottom: 10px;
+  font-family: "Barriecito", sans-serif;
+  text-shadow: 2px 2px 5px black;
+}
+
+
+.subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+/* Button Styles */
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Onest", sans-serif;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+button:focus {
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:active {
+  box-shadow: 2px 2px 5px #1c1a13;
+  font-weight:bold;
+}
+
+/* Main Content Section */
+
+.main-content {
+  font-family: "Onest", sans-serif;
+  padding: 40px 20px;
+  background-color: #9caf88;
+}
+.intro-section h2::after {
+  content: "🌿 ";
+  margin-right: 8px;
+}
+.intro-section h2,
+.info-section h2,
+.action-section h2{
+  font-size: 4rem;
+  text-align: center;
+  text-decoration: underline;
+  font-weight: bold;
+  font-family: "Barriecito", sans-serif;
+}
+.info-section,
+.action-section,
+.intro-section {
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: left;
+}
+.info-section p,
+.intro-section p,
+.action-section p{
+  font-size: 1.1rem;
+  color: #555555;
+  line-height: 1.6;
+  font-family: "Poppins", sans-serif;
+  color:#2e2e2e;
+}
+
+.info-section img{
+  float: right;
+  margin-left: 1rem;
+}
+.intro-section p::first-letter {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #4a5d23;
+}
+
+form {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  font-family: "Barriecito", sans-serif;
+  padding: 25px;
+}
+
+input:invalid {
+  background-color: ivory;
+  border: none;
+  outline: 2px solid red;
+  border-radius: 5px;
+}
+
+#donate-btn{
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
+.donate{
+  font-family: "Barriecito", sans-serif;
+  font-size: 40px;
+  transition: background-color 0.3s;
+}
+
+.donate:focus {
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
+}
+
+.donate:hover {
+  background-color: #45a049;
+  outline-style: solid;
+  box-shadow: 1px 1px 1px #1c1a13;
+}
+
+.donate:active {
+  box-shadow: 2px 2px 5px #1c1a13;
+  font-weight:bold;
+}
+
+/* Footer Styles */
+.footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #333;
+  color: white;
+}
+
+.footer nav a {
+  color: #4caf50;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer nav a:hover {
+  text-decoration: underline;
+}
+.footer nav a::before {
+  content: "🐸 ";
+}
+.footer img {
+  width: 90px;
+  margin-top: -100px;
+}
+.social-icon {
+  vertical-align: baseline;
+  margin-bottom: -15px;
+}
