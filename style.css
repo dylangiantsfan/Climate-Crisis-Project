@@ -257,3 +257,49 @@ input:invalid {
   vertical-align: baseline;
   margin-bottom: -15px;
 }
+/* Media Adjusters */
+@media (max-width: 768px) {
+  #navbar {
+    flex-direction: column;
+  }
+
+  #navbar a {
+    padding: 15px;
+    font-size: 1rem;
+  }
+
+  #navbar img {
+    height: 60px;
+    margin: 10px 0;
+  }
+}
+@media (max-width: 768px) {
+  .intro-section,
+  .info-section,
+  .action-section,
+  .summary {
+    padding: 20px;
+    margin: 10%;
+  }
+}
+@media (max-width: 768px) {
+  h2{
+    margin: 10%;
+  }
+}
+@media (max-width: 768px) {form,input{
+    font-size: 2vw;
+  }
+}
+@media (max-width: 768px) {
+  .intro-section p,
+  .info-section p,
+  .action-section p {
+    font-size: 0.75rem;
+    margin: 10%;
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
